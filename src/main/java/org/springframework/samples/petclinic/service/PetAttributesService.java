@@ -17,11 +17,6 @@ public class PetAttributesService {
 	private PetRepository petRepository;
 
 	public PetAttributes save(PetAttributes attributes) {
-//		if (attributes.getPet() != null && attributes.getPet().getId() != null) {
-//			Pet pet = petRepository.findById(attributes.getPet().getId().longValue())
-//				.orElseThrow(() -> new RuntimeException("Pet not found"));
-//			attributes.setPet(pet); // Fully attach the Pet entity
-//		}
 		return repository.save(attributes);
 	}
 

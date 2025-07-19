@@ -111,8 +111,6 @@ public class DataInitializer implements CommandLineRunner {
 		dog.setName("dog");
 		dog = petTypeRepository.save(dog);
 
-		// Add other pet types similarly...
-
 		// --- Owners ---
 		Owner o1 = new Owner();
 		o1.setFirstName("George");
@@ -130,8 +128,6 @@ public class DataInitializer implements CommandLineRunner {
 		o2.setTelephone("6085551749");
 		ownerRepository.save(o2);
 
-		// Add other owners similarly...
-
 		// --- Pets ---
 		Pet pet1 = new Pet();
 		pet1.setName("Leo");
@@ -139,8 +135,6 @@ public class DataInitializer implements CommandLineRunner {
 		pet1.setType(cat);
 //		pet1.setOwner(o1);
 		petRepository.save(pet1);
-
-		// Add other pets similarly...
 
 		// --- Visits ---
 		Visit visit1 = new Visit();
